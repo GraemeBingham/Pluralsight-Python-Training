@@ -8,6 +8,7 @@ with urlopen('http://sixty-north.com/c/t.txt') as story:
         line_words = line.decode('utf-8').split()
         # For each word in line words list add the it to the story word list
         for word in line_words:
+            # add words to end of words
             story_words.append(word)
 
 print(story_words)
